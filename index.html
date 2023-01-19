@@ -1,0 +1,44 @@
+<!doctype html>
+  <html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+          <link rel="stylesheet" href="./css/style.css">
+          <script defer src="./js/script.js"></script>
+          <script defer src="./js/game.js"></script>
+        <title> Bruno Mars - Jogo da memória </title>
+      </head>
+    <body>
+        <main>
+            <div class="game">
+                <div class="content">
+                    <div class="time flex">
+                        <div class="config flex">
+                            <p> Tempo: 00:00 </p>
+                              <button onclick="settings_open()"> Config </button>
+                          </div>
+                      </div>
+                    <div class="grid">
+                      </div>
+                  </div>
+                <div class="settings flex column">
+                    <h3>
+                        Configurações
+                      </h3>
+                    <button class="play" onclick="settings_close()"> Jogar </button>
+                    <div class="audio flex" onclick="music_play()">
+                        <label>
+                            Música
+                          </label>
+                        <label class="status status-off">
+                            OFF
+                          </label>
+                      </div>
+                    <div class="flex" style="height: 50px;">
+                        <p> Game created by @brunodasilveira27 </p>
+                      </div>
+                  </div>
+              </div>
+          </main>
+      </body>
+</html>
